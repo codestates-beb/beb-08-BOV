@@ -1,4 +1,4 @@
 # Table of contents
 
 * [test](README.md)
-* [Page 2](page-2.md)
+* [test2](test2.md)
