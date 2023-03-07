@@ -1,0 +1,94 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  #logo {
+    height: 50px;
+  }
+  
+  #barItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  #barItem > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search {
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 8px;
+    margin-right: 100px;
+    width: 700px;
+    font-size: 16px;
+  }
+  
+  #search:focus {
+    outline: none;
+  }
+  
+  #menu {
+    border: none;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  
+  #menu:hover {
+    background-color: #ddd;
+  }
+  
+  #menuPR:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  #wallet {
+    border: none;
+    background-color: #3b3838;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #wallet:hover {
+    background-color: #111;
+    cursor: pointer;
+  }
+  
+  #confirm {
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin: -10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 190px;
+  }
+  
+  #confirm:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+  }
+  
