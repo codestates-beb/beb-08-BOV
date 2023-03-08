@@ -10,24 +10,13 @@ import DetailPage from './pages/DetailPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import { WalletStatus } from './components/WalletStatus';
+
 function App() {
-  const [account, setAccount] = useState("");
-  const getAccount = async () => {
-    try{
-      if(window.ethereum){
-        const account = await window.ethereum.request({
-          method: "eth_requestAccounts",
-        });
-        setAccount(account[0]);
-      }
-    } catch(err){
-      console.error(err);
-    }
-  };
 
   return (
     <BrowserRouter>
-      <Header getAccount/>
+      <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/mypage' element={<MyPage />} />
@@ -37,6 +26,7 @@ function App() {
         <Route path='*' />
       </Routes>
       <Footer />
+      <WalletStatus />
     </BrowserRouter>
   );
 }
