@@ -1,8 +1,12 @@
 import logo from "../Photo/OpenSea.svg"
 import "../style/Header.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
-import Web3 from 'web3';
+
+import { useWeb3React } from '@web3-react/core' // 계정 받아오기
+
+import { Connect } from './Connect'; // 연결되어 있는 것에 대한 정보 받아오기
+import { Balance } from './WalletInfo';
 
 export default function Header(){
     const [search, setSearch] = useState("")
@@ -11,50 +15,29 @@ export default function Header(){
         setSearch(event.target.value)
     }
 
-    const[web3, setweb3] = useState();
+    const { account } = useWeb3React(); // web3 Lib을 통해 계정 저장
 
-    useEffect(() => {
-        if(typeof window.ethereum !== "undefined"){
-            try{
-                const web = new Web3(window.ethereum);
-                setweb3(web)
-            } catch(err){
-                console.log(err)
-            }
-        }
-    }, [])
-
-    const [account, setAccount] = useState("");
-    const [isConnected, setIsConnected] = useState(false);
-
-    const connectWallet = async() => {
-        const accounts = await window.ethereum.request({
-            method: "eth_requestAccounts",
-        }) 
-        if(isConnected)setAccount("")
-        else {
-            //console.log(accounts);
-            setAccount(accounts[0]);
-            setIsConnected(true);
-        }
-    }
-
+    const balance = Balance();
+    //console.log(balance)
+    
     const mypageUrl = `/mypage/${account}`;
     const requestLogin = () => {
         alert("메타마스크 연동 및 로그인이 필요합니다.")
     }
+
+
 
     return(
         <div id="navbar">
             <Link to='/'><img src={logo} alt="logo" id="logo"></img></Link>
             <div id ="barItem">
                 <div><input id="search" type="text" placeholder='🔎 Search items, collections, or accounts' value={search} onChange={handleChange}></input>
-                {isConnected ? <Link to="/MintNFTPage" id="menu">MintingNFT</Link> : <button id ="menu" onClick={requestLogin}>MintingNFT</button>}
+                {account ? <Link to="/MintNFTPage" id="menu">MintingNFT</Link> : <button id ="menu" onClick={requestLogin}>MintingNFT</button>}
                 <Link to="/marketPage" id="menu">Market</Link>
-                {isConnected ? <Link to={mypageUrl} id="menu">MyPage</Link> : <button id ="menu" onClick={requestLogin}>MyPage</button>}
+                {account ? <Link to={mypageUrl} id="menu">MyPage</Link> : <button id ="menu" onClick={requestLogin}>MyPage</button>}
                 </div>
                 </div>
-                    <button id="wallet" onClick={connectWallet}> {isConnected ? <button id="confirm">confirm</button> : <button id="wallet">Connect Metamask</button>}</button>
+                <Connect />
         </div>
     )
 }
