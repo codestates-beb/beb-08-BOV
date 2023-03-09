@@ -1,0 +1,19 @@
+.info1-subject {
+  color: rgb(4, 17, 29);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.info1-value {
+  color: rgb(4, 17, 29);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+}
+
+.info-display {
+  display: inline-block;
+  margin-right: 12px;
+}
