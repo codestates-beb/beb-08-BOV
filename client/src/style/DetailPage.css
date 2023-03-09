@@ -1,0 +1,84 @@
+#detailPage {
+  width: 100%;
+}
+#top {
+  width: 100%;
+}
+
+div.banner {
+  width: 100%;
+  max-height: 320px;
+  overflow: hidden;
+
+}
+.banner  img {
+  width: 100%;
+  height: auto;
+}
+
+#middle {
+  width: 95%;
+  margin: auto;
+}
+
+.col-mainImg-wrapper {
+  width: 170px;
+  height: 170px;
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  position: relative;
+  margin-top: -150px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 5px 20px 0px;
+}
+
+.col-mainImg-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: rgb(4, 17, 29);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.disc-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.info2 {
+  margin-bottom: 20px;
+}
+
+#bottom {
+  width: 95%;
+  margin: auto;  
+}
+
+.title {
+  border-bottom: solid 1px rgba(229, 232, 235, 0.5);
+}
+
+.title-items {
+  color: rgb(112, 122, 131);
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.title-focus {
+  color: rgb(53, 56, 64);
+  border-bottom: solid 3px rgb(53, 56, 64);
+}
+
+.items {
+  margin-top: 20px;
+  font-size: 0;
+}

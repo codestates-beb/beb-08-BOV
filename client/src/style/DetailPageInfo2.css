@@ -1,0 +1,18 @@
+.info2-subject {
+  color: rgb(112, 112, 131);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.info2-value {
+  color: rgb(4, 17, 29);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.info2-display {
+  margin-right: 40px;
+  display: inline-block;
+}
