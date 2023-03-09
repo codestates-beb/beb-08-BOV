@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import MainPage from './pages/MainPage';
 import MyPage from './pages/MyPage';
 import DetailPage from './pages/DetailPage';
+import MintNFTPage from './pages/MintNFTPage';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -27,7 +28,9 @@ function App() {
       </Routes>
       <Footer />
       <WalletStatus />
+      <MintNFTPage />
     </BrowserRouter>
+    
   );
 }
 
