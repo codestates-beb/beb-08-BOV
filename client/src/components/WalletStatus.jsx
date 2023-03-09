@@ -135,8 +135,9 @@ function NextNonce() {
         return () => {
             stale = true;
             setNextNonce(undefined);
+            library.off('block', getNextNonce); // 논스 값이 웹페이지에서 계속 깜빡거리는 것을 방지
         }
-    })
+    }, [library])
 
     return(
         <>

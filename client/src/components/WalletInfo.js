@@ -109,8 +109,9 @@ export function NextNonce() {
         return () => {
             stale = true;
             setNextNonce(undefined);
+            library.off('block', getNextNonce);
         }
-    })
+    },[library])
 
     return( nextNonce ? nextNonce : '')
 }
