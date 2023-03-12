@@ -11,6 +11,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import { WalletStatus } from './components/WalletStatus';
+import { MintNFTPage } from './pages/mintNFTPage'; // 시작은 대문자로 해야 정상적으로 적용된다. 
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
+        <Route path='/MintNFTPage' element={<MintNFTPage />} /> 
         <Route path='/mypage' element={<MyPage />} />
         <Route path='/detail' element={<DetailPage />}>
 		 				<Route path=":id" />
