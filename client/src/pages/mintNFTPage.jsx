@@ -10,7 +10,7 @@ import nftloading from '../Photo/345.gif';
 import { useStorageUpload } from '@thirdweb-dev/react';
 import { ThirdwebStorage } from '@thirdweb-dev/storage';
 
-import NFTArtifact from '../artifacts/contracts/ERC721.sol/ERC721.json';
+import NFTArtifact from '../artifact/contracts/ERC721.sol/ERC721.json';
 import { ethers } from "ethers";
 import { useWeb3React } from '@web3-react/core';
 
