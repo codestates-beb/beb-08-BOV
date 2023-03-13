@@ -23,7 +23,7 @@ const MainPage = () => {
         </section>
       </main>
       <footer>
-        <p>© 2023 H O V NFT market place. All rights reserved.</p>
+        <p>© 2023 H O V NFT market place. All rights reserved</p>
       </footer>
     </div>
   );
