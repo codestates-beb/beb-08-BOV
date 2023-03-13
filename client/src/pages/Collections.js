@@ -56,12 +56,12 @@ export default function Collections() {
       })}
     </ul>
     <div>
-      <div>
+      {/* <div>
         <a href='#' onClick={()=> clickPagenation(0)}>prev</a>
       </div>
       <div>
         <a href='#' onClick={()=> clickPagenation(1)}>next</a>
-      </div>
+      </div> */}
     </div>
   </div>)
 }
