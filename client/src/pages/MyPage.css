@@ -1,0 +1,56 @@
+.mypage_img {
+    width: 100%;
+    height: 400px;
+    opacity: 0.7;
+    z-index: -1;
+}
+.box{
+    width:300px;
+    height:300px;
+    border-radius: 70%;
+    margin-top: -180px;
+    margin-left: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.profile_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.mypage_box{
+    z-index: -1;
+}
+.text_modify{
+    margin-left: 70px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+.text_btt{
+    margin-right: 1rem;
+    font-size: 60px;
+    width: 230px;
+
+}
+.img_btt{
+    width: 100%;
+    height: 100%;
+}
+.img_div{
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+.wallet_address{
+    margin-left: 120px;
+    margin-top: -20px;
+}
+.nft_dir{
+    font-size: 50px;
+}
+.nft_{
+    margin-left: 50px;
+    height: 60px;
+}
