@@ -7,9 +7,9 @@
 
 div.banner {
   width: 100%;
-  max-height: 320px;
+  height: 320px;
   overflow: hidden;
-
+  background-color: rgba(229, 232, 235, 0.314);
 }
 .banner  img {
   width: 100%;
