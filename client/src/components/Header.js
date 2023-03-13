@@ -33,7 +33,7 @@ export default function Header(){
                 <div><input id="search" type="text" placeholder='🔎 Search items, collections, or accounts' value={search} onChange={handleChange}></input>
                 {account ? <Link to="/MintNFTPage" id="menu">MintingNFT</Link> : <button id ="menu" onClick={requestLogin}>MintingNFT</button>}
                 <Link to="/marketPage" id="menu">Market</Link>
-                {account ? <Link to={mypageUrl} id="menu">MyPage</Link> : <button id ="menu" onClick={requestLogin}>MyPage</button>}
+                {account ? <Link to="/MyPage" id="menu">MyPage</Link> : <button id ="menu" onClick={requestLogin}>MyPage</button>}
                 </div>
                 </div>
                 <Connect />
