@@ -1,5 +1,6 @@
 #detailPage {
-  width: 100%;
+  width: 100%;  
+  margin-top: 78px;
 }
 #top {
   width: 100%;
@@ -29,6 +30,7 @@ div.banner {
   position: relative;
   margin-top: -150px;
   box-shadow: rgb(0 0 0 / 8%) 0px 5px 20px 0px;
+  background-color: rgba(229, 232, 235, 0.314);
 }
 
 .col-mainImg-wrapper img {

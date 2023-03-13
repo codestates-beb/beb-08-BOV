@@ -23,7 +23,7 @@ export default function DetailPage(props) {
       ({collectionSlug, collectionAddr} = location.state);
     }
   }
-console.log(collectionSlug,collectionAddr)
+  console.log(collectionSlug,collectionAddr)
   useEffect (() => {
     //0x6447F7d21f19af6c11824B06E3a6618542ceDF33 //주소창에 뜨는 주소
     //0xb4d06d46A8285F4EC79Fd294F78a881799d8cEd9 //이더스캔에 검색되는 주소
@@ -68,7 +68,7 @@ console.log(collectionSlug,collectionAddr)
     </section>
     <section id="middle">
       <div className="col-mainImg-wrapper">
-        <img src={collectionData.image_url} alt='mainImg'/>
+        {collectionData.image_url ? <img src={collectionData.image_url} alt='mainImg'/> : <></>}
       </div>
       <div className='name'>{collectionData.name}</div>
       <div className='info1'>

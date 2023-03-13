@@ -1,4 +1,11 @@
-.asset {
+
+.collections-main {
+  width: 95%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.collections-main-coll {
   display: inline-block;
   box-shadow: rgb(0 0 0 / 8%) 0px 4px 15px;
   transition: box-shadow 0.25s ease-in-out 0s;
@@ -11,35 +18,36 @@
   font-size: 14px;
 }
 
-.asset:hover {
+.collections-main-coll:hover {
   box-shadow: rgb(0 0 0 / 15%) 0px 6px 25px;
   /* transition: all 0.1s ease 0s; */
 }
 
-.asset a {
+.collections-main-coll a {
   display: block;
   height: 100%;
 }
 
-.thumbnail-wrapper {
+.collections-col-img-wrapper {
+  background-color: rgba(229, 232, 235, 0.314);
   overflow: hidden;
   height: 270px;
 }
 
-img.thumbnail {
+img.collection-img {
   width: 100%;  
   transition: transform 0.4s ease 0s;
 }
 
-img.thumbnail:hover {
+img.collection-img:hover {
   transform: scale(1.1);
 }
 
-.asset-info-wrapper {
+.collection-info-wrapper {
   padding: 15px;
 }
 
-.token-id {
+.collection-info-name{
   font-weight: 600;
   line-height: 20px;
   color: rgb(4, 17, 29);
@@ -48,11 +56,4 @@ img.thumbnail:hover {
   text-overflow: ellipsis; 
   white-space: nowrap; 
   overflow: hidden;
-}
-
-.current-price {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  color: rgb(4, 17, 29);
 }
