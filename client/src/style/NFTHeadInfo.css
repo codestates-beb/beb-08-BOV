@@ -1,0 +1,21 @@
+.head-info-coll-name {
+  color: rgb(32, 129, 226);
+  padding: 10px 0;
+}
+
+.head-info-token-id {
+  font-size: 30px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.head-info-owned {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.head-info-rank {
+  font-size: 15px;
+}

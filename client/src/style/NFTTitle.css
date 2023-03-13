@@ -1,0 +1,17 @@
+.common-nft-iconbox {
+  display: flex;
+  align-items: center;
+  padding: 20px;  
+}
+
+.iconbox-border-top {
+  border-top: 1px solid rgb(229, 232, 235);
+}
+
+.iconbox-border-bottom{
+  border-bottom: 1px solid rgb(229, 232, 235);
+}
+
+.nft-detail-title i {
+  margin-right: 10px;
+}

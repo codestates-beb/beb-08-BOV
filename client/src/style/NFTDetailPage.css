@@ -1,0 +1,71 @@
+/**NFTDetailPage이하 공통 사용*/
+.common-nft-title {
+  color: rgb(4, 17, 29);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.common-nft-desc {
+  color: rgb(53, 56, 64);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+a {
+  color: rgb(32, 129, 226)
+}
+/*****************************************/
+
+#NFT-detail-page {
+  margin-top: 100px; /*지울것!!!!!!!!*/
+}
+
+.NFT-top {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 45% 55%;
+  width: 95%;
+  margin: auto;
+}
+
+.NFT-left {
+  /* max-width: 750px; */
+  margin-right: 20px;
+}
+
+.img-org {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(229, 232, 235);
+}
+
+.img-org-header {
+  height: 40px;
+}
+
+.img-org-wrapper {
+  overflow: hidden;
+  font-size: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.img-org-wrapper img {
+  width: 100%;
+}
+
+.nft-head-info {
+  margin-bottom: 20px;
+}
+
+
+/** 미디어 쿼리 */
+@media screen and (max-width: 1000px) {
+  .NFT-top {
+    grid-template-columns: 100%;
+  }
+  .NFT-left {
+    margin-right: 0px;
+  }
+}
