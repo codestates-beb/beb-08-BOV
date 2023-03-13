@@ -9,16 +9,17 @@ export default function Attributes({traits, collTraits}) {
     for(const prop in traitsObj) {
       traitSum += traitsObj[prop];
     }
-    return Math.round(traitsObj[traitValue.toLowerCase()] / traitSum * 100);
+    return Math.round(traitsObj[traitValue.toString().toLowerCase()] / traitSum * 100);
   }
 
   return (<ul className='trait-wrapper'>
     {traits.map((el, index)=>{
+      console.log(el.trait_type, el.value)
       return (
       <li className='trait' key={index}>
         <div className='trait-type'>{el.trait_type}</div>
         <div className='trait-value'>{el.value}</div>
-        <div className='trait-rare'>{calRare(el.trait_type, el.value)}% have this trait</div>
+        {!isNaN(calRare(el.trait_type, el.value)) ? <div className='trait-rare'>{calRare(el.trait_type, el.value)}% have this trait</div> : <></>}
       </li>)
     })}
   </ul>);
