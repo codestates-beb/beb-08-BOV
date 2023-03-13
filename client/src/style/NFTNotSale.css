@@ -1,0 +1,30 @@
+.nft-not-sale-main {
+  border-radius: 10px;
+  border: 1px solid rgb(229, 232, 235);
+  margin-bottom: 20px;
+}
+
+.nft-not-sale-price-buy {
+  padding: 20px;
+}
+
+.nft-not-sale-buy-btn {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 17px 0;
+  background-color: rgb(32, 129, 226);
+  border: 2px solid rgb(32, 129, 226);  
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+/** 미디어 쿼리 */
+@media screen and (max-width: 1000px) {
+  .nft-not-sale-buy-btn {
+    width: 100%;
+  }
+}
