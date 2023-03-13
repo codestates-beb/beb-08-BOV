@@ -16,6 +16,11 @@
   /* transition: all 0.1s ease 0s; */
 }
 
+.asset a {
+  display: block;
+  height: 100%;
+}
+
 .thumbnail-wrapper {
   overflow: hidden;
   max-height: 270px;
