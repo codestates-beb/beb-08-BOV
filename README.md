@@ -1,6 +1,3 @@
-## 영상: 
-https://www.youtube.com/watch?v=JgPHHtk0BQI
-
 ## notion: 
 https://codestates.notion.site/fe0e020d90b0427aa912b92c80cbe939?v=e9275161e140447f894de0d8cf87f2c2&p=50b4f0bb5daf4e49965e64c962df3dca&pm=c
 
