@@ -1,3 +1,7 @@
+시현 영상: 
+https://www.youtube.com/watch?v=JgPHHtk0BQI
+
+
 # Achievement Goals
 
 * 회원가입을 할 수 있다.
